@@ -15,4 +15,10 @@ nodejs + express + react + react-router + webpack
 
 -- Module not found: Error: Can't resolve  没有找到模块，可能是路径错了
 
--- Failed prop type: The prop `history` is marked as required in `Router`
+
+
+
+-- Warning: Failed prop type: The prop `history` is marked as required in `Router`, but its value is `undefined`. in Router
+
+
+react-router4.0以上的api改变了

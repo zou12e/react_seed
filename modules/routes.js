@@ -1,15 +1,27 @@
 import React from 'react'
-import { Route, IndexRoute } from 'react-router'
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
+
 import A from './A'
 import B from './B'
 
 
- 
+const RouterList = () => (
+    <Router>
+        <div>
+        	 
+            <Link to="/">首页</Link>
+            
+            <div>
+            	<Link to="/two">第二页</Link>
+            </div>
 
-
-module.exports = (
-	<Route path="/" component={A}>
-		
-    	<Route path="/about" component={B}/>
-	</Route>
+            <Link to="/Lists">一个列表</Link>
+            
+            <Route exact path="/" component={A}/>
+            <Route path="/two" component={B}/>
+           
+        </div>
+    </Router>
 )
+
+export default RouterList;
