@@ -22,3 +22,9 @@ nodejs + express + react + react-router + webpack
 
 
 react-router4.0以上的api改变了
+
+
+
+-- Module build failed: SyntaxError: Unexpected token (36:37)
+
+webpack.server.config.js 没有选择编译react

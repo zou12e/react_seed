@@ -3,25 +3,27 @@ import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
 
 import A from './A'
 import B from './B'
+import C from './C'
+import MLink from './MLink'
+
+ 
 
 
-const RouterList = () => (
-    <Router>
+const Routes = () => (
+   <div>
         <div>
-        	 
-            <Link to="/">首页</Link>
-            
-            <div>
-            	<Link to="/two">第二页</Link>
-            </div>
-
-            <Link to="/Lists">一个列表</Link>
-            
-            <Route exact path="/" component={A}/>
-            <Route path="/two" component={B}/>
-           
+          <ul>
+            <li><MLink to="/" exact  >A</MLink></li>
+            <li><MLink to="/b" >B</MLink></li>
+            <li><MLink to="/c" >C</MLink></li>
+          </ul>
+          <hr/>
+          <Route path="/" component={A}/>
+          <Route path="/b"  component={B}/>
+          <Route path="/c"   component={C}/>
         </div>
-    </Router>
+    </div>
 )
 
-export default RouterList;
+export default Routes;
+

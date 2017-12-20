@@ -1,4 +1,9 @@
 body {
 
+	color: #000;
+}
+
+.active {
+
 	color: red;
 }
