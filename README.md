@@ -30,3 +30,8 @@ webpack.server.config.js 没有选择编译react
 
 --return window && document && document.all && !window.atob;
 服务器打包scss不同
+
+
+
+--启动生产
+NODE_ENV=production npm start

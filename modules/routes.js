@@ -6,7 +6,7 @@ import B from './B'
 import C from './C'
 import MLink from './MLink'
 
-import './scss.scss';
+
  
 
 

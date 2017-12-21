@@ -4,6 +4,8 @@ import {  BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Routes from './modules/Routes'
 
 
+import './public/scss/scss.scss';
+
 
 const BasicExample = () => (
   <Router>

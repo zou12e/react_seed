@@ -9,7 +9,7 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import RouterList from './modules/Routes'
-import './modules/scss.scss';
+
 
 
 let	app = express()
@@ -35,10 +35,11 @@ app.get('*',(req, res) => {
 
 function renderPage(appHtml) {
 	return `
-		<!doctype html public="storage">
+	<!doctype html public="storage">
 	<html>
 	<meta charset=utf-8/>
 	<title>My</title>
+	<link rel=stylesheet href=/scss/scss.css />
 	<div id=app>${appHtml}</div>
 	<script src="/bundle.js"></script>
 	 `

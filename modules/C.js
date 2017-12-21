@@ -6,7 +6,12 @@ import MLink from './MLink'
 
 const C = ({ match }) => (
   <div>
-    <h2>C</h2>
+
+  
+
+    <hr/>
+
+      <h2>C</h2>
     <ul>
       <li>
         <MLink exact to={`${match.url}` }>
