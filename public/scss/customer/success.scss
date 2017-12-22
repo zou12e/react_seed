@@ -1,0 +1,123 @@
+﻿.success_icon{
+	width: 150px;
+	margin:71px auto 10px;
+	display: block;
+}
+.success_text{
+	color:black;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+
+}
+
+.twinkle{
+	animation:twinkle_text 0.3s linear infinite;
+	-webkit-animation:twinkle_text 0.3s linear infinite;
+	-moz-animation:twinkle_text 0.3s linear infinite;
+
+	@at-root{
+
+		@keyframes twinkle_text{
+			0%,33%{
+				color:#3e83ff;
+			}
+			34%,66%{
+				color:#28DC8E;
+			}
+			66%,99%{
+				color:#FEDA01;
+			}
+		}
+		@-webkit-keyframes twinkle_text{
+			0%,33%{
+				color:#3e83ff;
+			}
+			34%,66%{
+				color:#28DC8E;
+			}
+			66%,99%{
+				color:#FEDA01;
+			}
+		}
+		@-moz-keyframes twinkle_text{
+			0%,33%{
+				color:#3e83ff;
+			}
+			34%,66%{
+				color:#28DC8E;
+			}
+			66%,99%{
+				color:#FEDA01;
+			}
+		}
+	}
+}
+.success_box {
+	position: relative;
+	padding: 0 10px;
+	.p1 {
+		margin: 5px auto 0;
+		text-align: center;
+		font-size: $font-size-sub;
+		
+	}
+	.p3 {
+		text-align: center;
+	}
+	.btn {
+		margin-top: 20px;
+	}
+	.tl {
+		text-align: left;
+		margin-left: 10px;
+	}
+	.button {
+		border:none;
+	}
+}
+
+.exchange_info_box{
+	margin:20px 0 35px;
+
+	p{
+		text-align: center;
+		color:$text_light_color;
+		font-size: 13px;
+		line-height: 25px;
+	}
+}
+
+.exchange_notice_text{
+	color:$text_light_color;
+}
+.exchange_notice_text.red{
+	color:$color_red !important;
+	font-weight:bold;
+}
+
+.dialog_suc_box{
+	overflow: hidden;
+	background-color: white;
+}
+.success_text2 {
+	text-align: center;
+	padding:0 25px;
+	overflow: hidden;
+	margin-bottom: 35px;
+
+	.button {
+		display: inline-block;
+		color: $color_main;
+		width: 131px;
+		height:42px;
+		line-height:42px;
+		border:1px solid $color_main;
+		border-radius:5px;
+		font-size: $font-size-sub;
+
+		&:active{
+			background-color:#f3f3f3;
+		}
+	}
+}

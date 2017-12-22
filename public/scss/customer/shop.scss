@@ -1,0 +1,149 @@
+﻿.shop_list {
+	overflow: hidden;
+	padding-bottom: $box_gap;
+	
+
+	li.shop_select_list {
+		padding:0;
+
+		a{
+			display: block;
+			height: 100%;
+			padding: $box_gap;
+		}
+	}
+
+
+	li {
+		position: relative;
+		padding: $box_gap;
+		background: $color_white;
+		
+		&:not(:first-child){
+			@include border-t;
+		}
+		
+		.f{
+			padding-left: 60px;
+		}
+		
+		.right_cont{
+			padding-right: 65px;
+		}
+
+		.p1 {
+			color: $txt-default;
+		}
+		.p2 {
+			color: $txt-info;
+			overflow: hidden;
+			font-size: $font-size-tips;
+			margin: 5px 0 0 0;
+		}
+		.p3 {
+			font-size:$font-size-sub;
+		}
+	}
+	.li {
+		padding: 0px;
+		a {
+			display: block;
+			padding:10px $box_gap;
+			&:active {
+				background-color: $active-bg;
+			};
+		}
+	}
+	.fl {
+		position: absolute;
+		left: 15px;
+		top: 50%;
+		width: 45px;
+		height: 45px;
+		background-color: $gray-bg;
+		border-radius: 50%;
+		@include translate(0);
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+		.pay {
+
+			display: block;
+			border-radius: 10px;
+			padding: 3px 10px;
+			text-align: center;
+			background-color: $color_main;
+			color: $color_white;
+			font-size: $font-size-sub;
+		}
+	}
+	
+	.pay_box{
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform:translateY(-50%);
+		-webkit-transform:translateY(-50%);
+
+
+		.pay_btn{
+			width: 60px;
+			height: 25px;
+			background-color:$blue;
+			color:$white;
+			font-size: 15px;
+			display: block;
+			border-radius: 5px;
+			text-align: center;
+			line-height: 25px;
+		}
+	}
+
+	.padding_hide {
+		background: transparent;
+		border: none;
+		line-height: 30px;
+		height: 30px;
+		padding: 0;
+		font-size: $font-size-tips;
+		color: $txt-tips;
+
+	}
+	.padding_li {
+		background: transparent;
+		border: none;
+		position: relative;
+		padding: 10px 0;
+		color: $txt-info;
+		font-size: $font-size-sub;
+		&:before {
+			@include after;
+			@include border-t($arrowcolor);
+			@include border-r($arrowcolor);
+			width: 12px;
+			height: 12px;
+			top: 35px;
+			left: 50%;
+			margin-left: -10px;
+			transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+		}
+	}
+
+	.distance_txt{
+		border:1px solid $gray-txt;
+		color:$gray-txt;
+		position: absolute;
+		right: $box_gap;
+		top: $box_gap;
+		height: 22px;
+		line-height: 22px;
+		border-radius: 12px;
+		width: 70px;
+		text-align: center;
+		font-size: $font-size-tips;
+	}
+}
+

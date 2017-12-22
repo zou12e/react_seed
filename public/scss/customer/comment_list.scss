@@ -1,0 +1,182 @@
+﻿.comment_html {
+    body {
+        background-color:white;
+    }
+}
+
+.comment_list_body {
+
+    .shop_header_box{
+        height: 50px;
+        background-color: $white;
+        position: relative;
+        padding-left: 50px;
+
+        i{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 12px;
+            left: 15px;
+            background-image:url(/img/weixin/icon_8.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        p{
+            line-height: 50px;
+            font-size: $font-size-sub;
+            color:black;
+        }
+    }
+
+
+
+    
+    .comment_list_box {
+        margin-top: 15px;
+        background-color: $color_white;
+    }
+
+    .comment_main_box{
+        padding-top: 15px;
+        padding-right:15px;
+        position: relative;
+        padding-left: 71px;
+    
+        .user_head{
+             border-radius: 50%;
+             border:1px solid rgb(172,172,172);
+             position: absolute;
+             width: 41px;
+             height: 41px;
+             left: 15px;
+             top: 15px;
+        }
+
+        .user_name{
+            line-height: 41px;
+            height: 41px;
+            font-size: $font-size-sub;
+        }
+
+        .shop_star_box{
+            height: 30px;
+            position: relative;
+            padding-left: 40px;
+
+            b{
+                font-size: $font-size13;
+                position: absolute;
+                left: 0;
+                line-height: 32px;
+                font-weight: normal;
+            }
+
+            li{
+                float: left;
+                width: 20px;
+                height: 30px;
+
+                i{
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    margin:7px 0px 7px 0;
+                    background-image:url(/img/weixin/naixue/icon_star.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                i.on{
+                    background-image:url(/img/weixin/naixue/icon_star_press.png);
+                }
+            }
+        }
+
+        .tags_list{
+            height: 25px;
+            float: left;
+            font-size: $font-size13;
+            margin-right:20px;
+
+            span,b{
+                line-height: 30px;
+            }
+            
+
+            b{
+                font-weight: normal;
+                color:black;
+            }
+        }
+
+
+        .comment_text{
+            line-height: 25px;
+            color:black;
+            font-size: $font-size13;
+            margin:10px 0;
+        }
+    }
+
+    .date_time{
+        height: 40px;
+        @include border_t;
+        font-size: $font-size-tips;
+        margin:0 15px;
+        padding-right:10px;
+        text-align: right;
+        line-height: 40px;
+    }
+    
+
+    .comment_reply_box{
+        @include borderBox;
+        margin-top:15px;
+        background-color: $white;
+
+        .reply_box{
+            padding:15px 15px 10px 15px;
+
+            h3{
+                font-size: $font-size-sub;
+                height: 30px;
+                line-height: 30px;
+                color:rgb(102,102,102);
+            }
+
+            p{
+                line-height: 25px;
+                font-size: $font-size13;
+                color:black;
+                margin:10px 0;
+            }
+        }
+    }
+
+
+    
+    .nodata_img {
+        margin-top: 10px;
+        width: 120px;
+    }
+    .nodata_text {
+        margin-top: 10px;
+    }
+
+    .comment_img_box{
+        overflow: hidden;
+        div{
+            width: 60px;
+            height: 60px;
+            display: block;
+            float: left;
+            margin-right: 10px;
+            margin-bottom:10px;
+            background-size:cover;
+            background-position:center;
+        }
+    }
+}

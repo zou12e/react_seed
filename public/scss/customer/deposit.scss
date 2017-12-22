@@ -1,0 +1,360 @@
+﻿.depositing_box {
+	overflow: hidden;
+	position: relative;
+	
+	.deposit_wrapper{
+		width: 200%;
+		overflow: hidden;
+		position: relative;
+		left: 0;
+	
+		.deposit_main_box{
+			width: 50%;
+			float: left;
+		}
+
+		/* 弹层 */
+		.deposit_shop_list{
+			float: left;
+			width: 50%;
+			display: none;
+		}
+	}
+
+	.deposit_wrapper.show {
+		left: -100%;
+
+		.deposit_shop_list{
+			display: block;
+		}
+	}
+
+	.deposit_ul{
+		min-height: 212px;
+	}
+	.select_ul_box{
+		padding:0;
+
+		li{
+			border-bottom: none;
+		}
+	}
+
+	.select_box3 {
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+		border:none;
+		border-radius: $border-radius-base;
+		@include borderBox;
+
+		.icon-business{
+			color:$disable-bg;
+		}
+
+		>select {
+			height: 100%;
+			width: 100%;
+			border: none;
+			z-index: 1;
+			margin-left: -5px;
+			font-size: $font-size-info;
+			background-color:rgba(0,0,0,0);
+		} 
+	}
+
+	.top_select_wrapper{
+		margin-top: 10px;
+	}
+
+
+	.top_box {
+		background-color: $color_white;
+		@include border-t;
+	}
+
+
+	.top_box.centent {
+		padding:$box_gap;
+		border-top: none;
+	}
+	.top {
+		position: relative;
+
+		.top_title{
+			font-size: $font-size-info;
+			color:$txt-default;
+			padding-left: 30px;
+			height: 30px;
+			line-height: 30px;
+			font-size: $font-size14;
+
+			i{
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				font-size: 20px;
+				color:$gray-bg;
+				top: 0;
+				text-align: left;
+			}
+		}
+
+		.icon{
+			position: absolute;
+			left: 0;
+			top: 10px;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			font-size: 35px;
+			line-height: 30px;
+			color:$disable-bg;
+		}
+
+		li {
+			float: left;
+			position: relative;
+			width: 32%;
+			height: 80px;
+			border:none; 
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			margin-top: $mt;
+			@include border-radius($txt-muted);
+			cursor: pointer;
+
+			>div {
+				text-align: center;
+				line-height: 26px;
+			}
+			.t {
+				color:$txt-default;
+				font-size: 18px;
+				line-height: 30px;
+				margin-top: 12px;
+			}
+
+			.b {
+				color:$txt-info ;
+				font-size: $font-size14;
+				@include nowrap;
+
+				span {
+					display:block;
+					font-size: $font-size-sub;
+					line-height: 20px;
+				}
+			}
+		}
+		
+		li.couponed:before{
+			position: absolute;
+			content:'券';
+			color:$color_white;
+			font-size: $font-size-tips;
+			background-image:url(/img/weixin/mark.png);
+			width: 28px;
+			height: 22px;
+			background-size: cover;
+			right:-4px;
+			top:3px;
+			text-align: center;
+		}
+
+		li:not(:nth-child(3n+1)) {
+			margin-left: 2%;
+		}
+
+		li.on {
+			
+			@include border-radius($color_main);
+			background-color:$color_main;
+
+			.b,.t {
+				color: $color_white;
+			}
+		}
+
+		li.dis {
+			background: none;
+			width: 100%;
+			text-align: center;
+			margin-left: 0;
+			line-height: 50px;
+			color: $txt-default;
+			padding-left: 8%;
+			border: none;
+			box-shadow:none;
+		}
+
+		li.added_coupon_list{
+			
+		}
+
+	}
+
+
+
+	.inpay_box {
+		background-color: $color_white;
+		margin: 15px 0 ;
+		padding: $mt $box_gap 0;
+		font-size: $font-size-title-lg;
+
+		.fl ,.fr {
+			height: 26px;
+			line-height: 30px;
+		}
+
+		em {
+			color: $blue;
+			font-size: 20px;
+			font-weight: normal;
+		}
+
+		.p {
+			font-size: $font-size-sub;
+			padding: 5px 0;
+			color: $txt-info;
+		}
+	} 
+
+	.bottom {
+		padding:$box_gap;
+	}
+
+	.my_balance{
+		background-color: $color_white;
+		overflow: hidden;
+		margin-bottom:$box_gap;
+		padding: 0 $box_gap;
+	}
+
+	
+
+	.despoit_yue_box{
+		@include border-b;
+		position: relative;
+		padding: 10px 0;
+		font-size: $font-size14;
+
+		.icon-hebingxingzhuang1{
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			color:$gray-bg;
+			font-size: 20px;
+			left: 0;
+			text-align: left;
+		}
+
+		.deposit_p_txt{
+			margin-left: 30px;
+			line-height: 30px;
+		}
+
+		.shop_address_box {
+			position: absolute;
+			right: 0;
+			top: 10px;
+		}
+	}
+
+	.despoit_amount_box{
+		font-size: 36px;
+		color:black;
+		padding:10px 0;
+	}
+	
+
+}
+
+
+.deposit_buy_btn{
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	z-index: 2;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color:$color_white;
+	background-color: $color_main;
+}
+.deposit_addtion_box{
+	background-color: $color_white;
+	margin-bottom: 70px;
+
+	>h3{
+		padding:0 $box_gap;
+		color:$color_main;
+		font-size: $font-size14;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.deposit_addtion_ul{
+		@include border-b;
+		@include border-t;
+		padding:0 $box_gap;
+	}
+
+	.addtion_coupon_list{
+		position: relative;
+		height: 36px;
+		padding-left: 36px;
+	
+
+		&:not(:first-child){
+			border-top: 0.5px dashed #e0e0e0;
+		}
+
+		&:before{
+			content:'券';
+			position: absolute;
+			background-color: #F36D6D;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			left: 0;
+			color:$color_white;
+			top: 8px;
+			font-size: $font-size13;
+		}
+
+		span{
+			line-height: 36px;
+			height: 36px;
+			font-size: $font-size13;
+		}
+		em{
+			line-height: 36px;
+			height: 36px;
+			font-size: $font-size13;
+			color:$gray-txt;
+		}
+	}
+}
+
+
+
+
+/* 公用 */
+.shop_address_box{
+	height: 30px;
+
+	a{
+		color:$color_main;
+		height: 30px;
+		display: block;
+		font-size: $font-size14;
+
+		i{
+			margin-right: 6px;
+		}
+	}
+}

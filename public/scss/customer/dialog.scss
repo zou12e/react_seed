@@ -1,0 +1,284 @@
+﻿.flex {display: -webkit-box; display: -webkit-flex; display: flex; }
+.show {display: -webkit-box !important; }
+
+
+
+.ui-radio {
+	
+	margin-right: 20px;
+}
+
+.ui-radio input {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	position: relative;
+	overflow: visible;
+	border: 0;
+	background: 0 0;
+	-webkit-appearance: none;
+	outline: 0;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.ui-dialog-cnt {
+
+	.icon-close1 {
+		position: absolute;
+		top: 0px;
+		right: 10px;
+		font-size: 26px;
+	}
+}
+.ui-dialog {
+	.ui-dialog-cnt2 {
+		padding-top: 10px;
+		.ui-dialog-bd {
+
+			border-bottom: none;
+		}
+	}
+}
+.ui-radio input:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #6AC8AE;
+	border-radius: 13px;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.ui-radio input:checked:after {
+	content: '';
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: #6AC8AE;
+	border-radius: 7px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+}
+
+
+.ui-poptips {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 100000;
+	display: none;
+	height: 40px;
+	transform: translate(-50%, -100%);
+	-webkit-transform: translate(-50%, -100%); 
+}
+.ui-poptips .ui-poptips-cnt {
+	margin: 0 10px;
+	background-color: rgba(0,0,0,.6);
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 3px;
+	padding: 0 10px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ui-poptips i {
+	display: inline-block;
+	width: 20px;
+	height: 1px;
+	position: relative;
+	overflow: visible;
+	margin-right: 8px;
+	margin-left: 0;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.ui-poptips i:before {
+	background: url(/img/weixin/pack/icon.png?_bid=306) no-repeat 0 0;
+	-webkit-background-size: 150px auto;
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: -11px;
+}
+.ui-poptips-info,.ui-poptips-success,.ui-poptips-warn {}
+.ui-poptips i:before{display: none;}
+.ui-poptips-info i:before,.ui-poptips-undefined i:before {
+	background-position: 0 -50px;
+	display: inline-block;
+}
+.ui-poptips-success i:before {
+	background-position: -25px -50px;
+	display: inline-block;
+}
+.ui-poptips-warn i:before {
+	background-position: -50px -50px;
+	display: inline-block;
+}
+
+.ui-dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	background: transparent;
+	display: none;
+	color: #000;
+}
+
+.ui-dialog.ui-cover {
+	background: rgba(0,0,0,.6);
+}
+
+.ui-dialog-cnt {
+	width: 130px;
+	height: 110px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	border-radius: 6px;
+	color: #fff;
+	z-index: 100;
+	padding-bottom:15px;
+}
+.ui-dialog-cnt p {
+	margin-top: 5px;
+}
+
+.ui-dialog-cnt .dialog_point{
+	font-weight: normal;
+	color: $color_main;
+	text-align: center;
+	font-size: $font-size-info;
+	display: block;
+}
+
+
+.ui-dialog-cnt .exchange_warn_text{
+	font-size: $font-size-sub;
+	line-height: 20px;
+
+	i{
+		color:$color_red;
+	}
+}
+
+.ui-loading-bright {
+	width: 37px;
+	height: 37px;
+	display: block;
+	background-image: url(/img/weixin/pack/loading_sprite_white.png?_bid=306);
+	-webkit-background-size: auto 37px;
+	-webkit-animation: rotate2 1s steps(12) infinite;
+}
+
+@-webkit-keyframes rotate2 {
+	from {
+		background-position: 0 0
+	}
+	to {
+		background-position: -444px 0
+	}
+}
+
+
+.ui-dialogs .ui-dialog-cnt {
+	border-radius: 6px;
+	width: 280px;
+	height: auto;
+	outline: 0;
+	background-color: #fff;
+	position: relative;
+	color: #000;
+	display: block;
+}
+
+.ui-dialog .ui-dialog-bd {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding: 0;
+	font-size: 16px;
+	color: #000;
+	
+	h4 {
+		margin-top: 32px;
+		line-height: 25px;
+		color:black;
+	}
+}
+
+
+
+.ui-dialog .ui-dialog-bd div {
+	text-align: left;
+	font-size: 14px;
+	color: #333;
+	line-height: 30px;
+	padding:15px 15px 0 15px;
+}
+
+.ui-dialog .ui-dialog-ft {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.ui-dialog .ui-btn-group{
+	display: -webkit-box;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ui-btn-group a {
+	color:$white;
+	line-height: 50px;
+	height: 48px;
+	text-align: center;
+	font-size: 14px;
+	border: none;
+	border-right: 1px #c8c7cc solid;
+	width: 100%;
+	display: block;
+	-webkit-box-flex: 1;
+	outline: none;
+	-webkit-appearance: none;
+	background-color: $color_main;
+}
+.ui-btn-group a:active {
+	background-color: $color_main_active;
+}
+.ui-dialog .ui-dialog-ft a:last-child {
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	margin:15px 15px 0 15px;
+}
+.dialog_t{
+	height:40px;
+	line-height: 30px;
+	color:black;
+	border-bottom:1px solid #e0e0e0;
+	font-weight: bold;
+}
+.gray_border{
+	border-bottom:1px solid rgb(221, 221, 221) !important;
+}

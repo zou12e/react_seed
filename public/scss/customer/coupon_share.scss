@@ -1,0 +1,110 @@
+﻿.coupon_share_html {
+	body {
+		background-color: $color_main;
+	}
+}
+
+.share_coupon_body{
+	.share_coupon_box{
+		margin:$mt;
+		border-radius: $border-radius-base;
+		background-color: $color_white;
+		overflow: hidden;
+	}
+	.friends_info_box{
+		height: 80px;
+		background-color: rgb(250,250,250);
+		position: relative;
+		padding-left: 100px;
+		overflow: hidden;
+		.friends_head_box{
+			position: absolute;
+			left: 20px;
+			width: 60px;
+			height: 60px;
+			top: 10px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.friends_name_box {
+		height: 80px;
+		p{
+			&:nth-child(1){
+				font-weight: bold;
+				margin-top: 10px;
+			}
+			&:nth-child(2){
+				color: $txt-info;
+				font-size: $font-size-tips;
+				margin-top: 10px;
+			}
+		}
+
+	}
+	.coupon_about_box{
+		margin:30px 0;
+		p{
+			text-align: center;
+			color: $txt-info;
+			font-size: $font-size-info;
+		}
+		.coupon_name_text{
+			font-weight: bold;
+			color: $txt-default;
+			line-height: 50px;
+			font-size: 30px;
+		}
+		.p2 {
+			color: $txt-info;
+			font-size: $font-size-tips;
+		}
+	}
+	.avail_date{
+		color: $txt-info;
+		font-size: $font-size-tips;
+		padding-left: $box_gap;
+	}
+	.buttom_box {
+		padding:30px $box_gap;
+
+
+	}
+	.coupon_btn{
+		width: 100%;
+		height: 46px;
+		text-align: center;
+		color:white;
+		border:none;
+		border-radius: $border-radius-base;
+		background-color: $color_main;
+	}
+
+	
+
+	.presented_coupon_btn{
+		background-color:$color_dis;
+	}
+
+	.ewm_box {
+		background-color: rgb(250,250,250);
+		padding: 20px 0 20px 20px;
+		img.fl {
+			width: 110px;
+			height: 110px;
+		}
+		.abs {
+			margin-left: 130px;
+			img {
+				width: 80px;
+				margin-left: 20px;
+			}
+			p {
+				text-align: left;
+				color: $txt-info;
+				font-size: $font-size-tips;
+			}
+		}
+	}
+}

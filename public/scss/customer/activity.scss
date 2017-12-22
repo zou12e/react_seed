@@ -1,0 +1,270 @@
+﻿.activity_box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: 100% 100%;
+	background-image: url(/img/weixin/activity/activity_bg.jpg);
+	.pimg {
+		position: absolute;
+		z-index: 3;
+		width: 94%;
+		left: 3%;
+		top: 5px;
+	}
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 2;
+		background: rgba(0,0,0,.5);
+	}
+	.msg {
+		position: absolute;
+		top: 10%;
+		width: 100%;
+		text-align: center;
+		img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+		p {
+			color: $color_white;
+			white-space: nowrap;
+			margin-top: $mt;
+		}
+	}
+	.pack {
+		position: absolute;
+		width: 96%;
+		left: 2%;
+		top: 50%;
+		@include translate(0%, -50%);
+	}
+
+	.share_buttom {
+		position: absolute;
+		z-index: 1;
+		bottom: 18%;
+		left: 50%;
+		margin-left: -75px;
+		width: 140px;
+		height: 140px;
+		background-size: 100% 100%;
+		background-image: url(/img/weixin/activity/activity_button.png);
+		text-align: center;
+		font-size: 26px;
+		color: $color_red;
+		font-weight: bold;
+		letter-spacing: 2px;
+		&:active {
+			background-image: url(/img/weixin/activity/activity_button_press.png);
+		};
+		p {
+			line-height: 32px;
+		}
+		p:first-child {
+			margin-top: 36px;
+		}
+	}
+}
+.activity_html {
+	body {
+		background-color: $color_yellow;
+	}
+}
+
+
+.activity_share_box {
+	padding-bottom: $box_gap;
+	.top_box {
+		background: rgba(0,0,0,.1);
+		margin: 0  15px;
+		border-radius: $border-radius-base;
+		overflow: hidden;
+	}
+
+	.coupon_share_box {
+		
+		background: $color_white;
+		border-radius: $border-radius-base;
+		overflow: hidden;
+		position: relative;
+		margin: 15px;
+		.t {
+			margin:5px 15px 0;
+			height: 50px;
+			@include border_b($bordercolor,1px,dashed);
+			p {
+				margin-left: $mt;
+			}
+			.p1 {
+				color: $color_red;
+			}
+			.p2 {
+				font-size: $font-size-tips;
+			}
+			.fr { color: $color_red;  }
+			.money {
+				font-size: 30px;
+			}
+			.money2 {
+				font-size: 24px;
+				line-height: 45px;
+			}
+			&:after,&:before {
+				@include after;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				background-color: $color_yellow;
+				top: 25px;
+				z-index: 10;
+				left: -7px;
+			};
+			&:before {
+				background-color: rgba(0,0,0,.1);
+				z-index: 11;
+			};
+		}
+		.b {
+			font-size: $font-size-tips;
+			color: $txt-info;
+			padding-left: 15px;
+			line-height: 26px;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+		}
+
+		&:after,&:before {
+			@include after;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: $color_yellow;
+			top: 25px;
+			z-index: 10;
+			right: -7px;
+
+		};
+		&:before {
+			background-color: rgba(0,0,0,.1);
+			z-index: 11;
+		};
+
+	}
+
+	.ewm_box {
+		margin: 20px 0 20px 20px;
+		img.fl {
+			width: 110px;
+			height: 110px;
+		}
+		.abs {
+			margin-left: 130px;
+			img {
+				width: 80px;
+				margin-left: 20px;
+			}
+			p {
+				text-align: left;
+				color: $color_white;
+				font-size: $font-size-tips;
+			}
+		}
+	}
+
+	.coupon_share_list {
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+		.clear {
+			margin: 0 $box_gap;
+			padding: $mt 0;
+
+			@include border_b(rgba(255,255,255,.3));
+			p {
+				margin-left: .5px;
+			}
+			.p1 {
+				font-size: $font-size-sub;
+			}
+			.p2 {
+				font-size: $font-size-tips;
+			}
+			.fr {
+				line-height: 40px;
+			}
+		}
+		.clear:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.title {
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		margin: 5px $box_gap 0;
+		position: relative;
+		span{
+			display: block;
+			position: absolute;
+			left: 50%;
+			z-index: 2;
+			background-color: $color_yellow;
+			padding: 0 10px;
+			font-size: $font-size-sub;
+			@include translate(-50%,0);
+			&:after {
+				@include after;
+				top: 100%;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				background-color: rgba(0,0,0,.1);
+			};
+		}
+
+		&:after {
+			@include after;
+			left: 0;
+			top: 15px;
+			width: 100%;
+			z-index: 0;
+			@include border_b(rgba(255,255,255,.3));
+		};
+	}
+	.title.mt {
+		margin-top: 15px;
+	}
+
+	.notice_ul {
+		padding-bottom: $box_gap;
+		li {
+			margin: 0 $box_gap 0;
+			line-height: 24px;
+			font-size: $font-size-sub;
+		}
+	}
+	.tag_box {
+		text-align: center;
+		line-height: 80px;
+	}
+}
+
+.top_box.mt {
+	margin-top: $mt;
+}

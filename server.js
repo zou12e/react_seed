@@ -15,6 +15,20 @@ import RouterList from './modules/Routes'
 let	app = express()
 app.use(compression());
 app.use(express.static(path.join(__dirname,'public')));
+
+
+app.get("/info",(req, res) => {
+
+
+	responseJSON(res,JSON.stringify({
+		logo: "/img/haoke/no_logo.png",
+		name: "一满乐好客",
+		coupon_size: 3
+
+	}));
+
+});
+
 app.get('*',(req, res) => {
 	const context = {}
 	const html = renderToString(
@@ -29,6 +43,8 @@ app.get('*',(req, res) => {
 		res.send(renderPage(html))
 		res.end()
 	}
+
+	
 });
 
 
@@ -39,10 +55,17 @@ function renderPage(appHtml) {
 	<html>
 	<meta charset=utf-8/>
 	<title>My</title>
-	<link rel=stylesheet href=/scss/scss.css />
+	<link rel=stylesheet href=/css/scss.css />
 	<div id=app>${appHtml}</div>
 	<script src="/bundle.js"></script>
 	 `
+}
+
+function responseJSON (res, json) {
+	res.writeHead(200, {
+		"Content-Type": "application/json;charset=utf-8"
+	});
+	res.end(json);
 }
 
 
@@ -52,3 +75,5 @@ app.listen(PORT, function () {
 	
 	console.log("Start Sever:"+PORT);
 })
+
+

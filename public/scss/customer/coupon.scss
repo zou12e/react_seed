@@ -1,0 +1,356 @@
+﻿
+.tab_box {
+    background: $color_white;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    @include border-b;
+    ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+    li {
+        width: 100%;
+        text-align: center;
+        box-flex: 1;
+        -webkit-box-flex: 1;
+        line-height: 44px;
+        position: relative;
+        color: $gray-txt;
+        font-size:14px;
+    }
+    li.on {
+        color: $color_main;
+    }
+}
+.coupon_list_box {
+    li {
+        margin: 10px 15px;
+        position: relative;
+        cursor: pointer;
+        background-color: $white;
+        border-radius: 5px;
+        overflow: hidden;
+        &:before {
+            content:'';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color:$body-bg;
+            z-index: 1;
+            border-radius: 50%;
+            bottom: 23px;
+            left: -8px;
+        }
+        &:after {
+            content:'';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color:$body-bg;
+            z-index: 1;
+            border-radius: 50%;
+            bottom: 23px;
+            right: -8px;
+        }
+    }
+    .none {
+        text-align: center;
+        background: none;
+        line-height: 120px;
+        color: $txt-default;
+        margin:40px 15px;
+        overflow: visible;
+    }
+    .box {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    .box_top {
+        height: 7px;
+        background-color:$color_main;
+    }
+    
+    /* 会员灰色 */
+    .box_top.gray{
+        background-color: $gray-bg;
+    }
+    .box_top.gray + .box .shop_name{
+        color: $gray-txt;
+    }
+    
+
+    .div_box {
+        padding: 10px 20px;
+    }
+    .shop_name {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color:black;
+        line-height: 30px;
+        height: 30px;
+
+        i{
+            margin-left: 8px;
+        }
+    }
+    .name {
+        height: 25px;
+        line-height: 25px;
+
+        em {
+            font-size: $font-size13;
+            float: left;
+            color:$gray-txt;
+        }
+        i {
+            float: left;
+            font-size: $font-size13;
+            margin-left: 5px;
+            color:$gray-txt;
+        }
+    }
+    .time {
+        font-size: $font-size-tips;
+        letter-spacing: 1px;
+        height: 32px;
+        line-height: 32px;
+        color:$gray-txt;
+        position: relative;
+        border-top: 1px dashed $gray-bg;
+        text-align: center;
+    }
+    .done, .over {
+        background-image:url(/img/weixin/customer/icon_coupon_2.png);
+        background-repeat: no-repeat;
+        background-size: 91px 85px;
+        background-position: 96% center;
+        .name i {
+            display: none;
+        }
+    }
+
+    .over {
+        background-image:url(/img/weixin/customer/icon_coupon_3.png);
+
+        .shop_name{
+			color:$gray-txt;
+        }
+
+        .box_top {
+            background-color:$gray-bg;
+        }
+        .box:after {
+            background-image:url(/img/weixin/customer/corner3.png);
+        }
+        .time {
+            color:$gray-txt;
+        }
+    }
+    .done {
+        background-image:url(/img/weixin/customer/icon_coupon_5.png);
+    }
+}
+.coupon_body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $body-bg;
+    .max_box {
+        width: 100%;
+        height: 100%;
+        padding-top: 44px;
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    }
+}
+.coupon_detail_box {
+	box-shadow: 0 0 6px 7px rgba(0,0,0,0.07);
+    margin:37px 15px 15px 15px;
+    background: $color_white;
+    border-radius: 5px;
+    /*padding: 0 $mt 50px;*/
+    .head {
+        height: 90px;
+        background-color: $color_main;
+        text-align: center;
+        position: relative;
+        border-radius: 5px;
+        padding-top: 30px;
+        @include borderBox;
+
+        &:before {
+            @include after;
+            width: 8px;
+            height: 16px;
+            background-color: $body-bg;
+            left: 0;
+            top: 100%;
+            margin-top:-8px;
+
+            border-top-right-radius:16px;
+            border-bottom-right-radius:16px;
+        }
+        
+        &:after {
+            @include after;
+            width: 8px;
+            height: 16px;
+            background-color: $body-bg;
+            top: 100%;
+            margin-top:-8px;
+
+            left: auto;
+            right: 0;
+            border-top-left-radius:16px;
+            border-bottom-left-radius:16px;
+        }
+        .p1, .p2 {
+            color: $white;
+        }
+        .p1 {
+            font-size: $font-size-sub;
+            height: 30px;
+            line-height: 30px;
+            margin-top:10px;
+        }
+    }
+    
+    .coupon_detail_cont {
+        padding:0 15px 0 15px;
+    }
+
+    .detail_coupon_name{
+    	margin:25px 0;
+		font-size: 30px;
+		line-height: 42px;
+		text-align:center;
+		color:$color_main;
+    }
+
+    .des, .rule {
+        padding:0 5px 10px;
+
+        .top {
+            color: $color_main;
+        }
+        .p1 {
+            position: relative;
+            font-size: $font-size-sub;
+            position: relative;
+            margin-top: 5px;
+            padding-left: 15px;
+            &:before {
+                content:'';
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: $txt-info;
+                left: 2px;
+                top: 8px;
+            }
+        }
+        em {
+            color: $txt-info;
+        }
+    }
+    .rule {
+        border-bottom: none;
+    }
+    .icon {
+        width: 18px;
+        height: 18px;
+        margin: 0 10px -2px 0;
+    }
+    .share_a {
+        @include border_t($bordercolor, 1px, dashed);
+        padding: $box_gap 0 $box_gap 5px;
+        display: block;
+        color: black;
+        position: relative;
+        &:active {
+            background-color: #eee;
+        }
+        
+        .icon {
+            color:$disable-bg;
+        }
+    }
+}
+
+.coupon_use_btn {
+	margin:15px;	
+}
+
+.coupon_pic_box{
+    margin: 15px auto;
+
+    img{
+        display: block;
+        height: 100px;
+        margin:0 auto;
+    }
+}
+
+.coupon_detail_box {
+    .shop_img_box {
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%);
+        -webkit-transform:translateX(-50%);
+        -moz-transform:translateX(-50%);
+        top:-22px;
+        width: 55px;
+        height: 55px;
+        background-color: $white;
+        overflow: hidden;
+        border-radius: 50%;
+        img.shop_img_url {
+            width: 100%;
+        }
+        i.shop_img_url {
+            width: 55px;
+            height: 55px;
+            display: block;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+        }
+    }
+}
+/* 过期的 */
+.coupon_detail_box.expired_coupon {
+    
+    .head {
+        background-color: $gray-bg;
+    }
+
+    .detail_coupon_name{
+    	color:$gray-txt;
+    }
+
+    .des{
+    	padding:0 5px 35px;
+    }
+}
+/* 使用过的 */
+ .coupon_detail_box.used_coupon {
+    .head {
+        background-color: $gray-bg;
+    }
+
+    .detail_coupon_name{
+    	color:$gray-txt;
+    }
+
+    .des{
+    	padding:0 5px 35px;
+    }
+}

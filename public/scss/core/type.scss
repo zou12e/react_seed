@@ -1,0 +1,31 @@
+
+a{
+	color: $txt-link;  
+}
+em{
+	color: $color_main;
+}
+::-webkit-input-placeholder {
+	color: $txt-muted;
+}
+
+
+h1{
+	font-size: $font-size-h1;
+}
+h2{
+	font-size: $font-size-title-lg;
+}
+h3,h4{
+	font-size: $font-size-title;
+}
+h5{
+	font-size: $font-size-sub;
+}
+h6{
+	font-size: $font-size-tips;
+}
+
+
+
+

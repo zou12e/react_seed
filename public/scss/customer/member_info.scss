@@ -1,0 +1,773 @@
+﻿
+
+.vip-swiper-container{
+	height: 192px;
+}
+.vip_slider_pagination{
+	position: relative;
+	bottom: 17px !important;
+	z-index: 5;
+}
+
+.vip_slider_pagination .swiper-pagination-bullet{
+	background-color: rgba(255,255,255,.4);
+}
+.vip_slider_pagination .swiper-pagination-bullet-active{
+	background-color: $color_white;
+}
+
+.vip_icon{
+	width: 60px;
+	height: 60px;
+	margin:30px auto 10px;
+	border-radius: 50%;
+	position: relative;
+	border:4px solid rgba(255,255,255,.2);
+	overflow: hidden;
+	
+	img{
+		border-radius: 50%;
+	}
+
+	.vip_head_icon{
+	    position: absolute;
+	    width: 23px;
+	    height: 23px;
+	    bottom: -6px;
+	    left: -10px;
+	    background-image: url(/img/weixin/v1_g.png);
+	    background-size: cover;
+	}
+}
+
+.vip_icon.user_icon{
+	overflow: visible;
+}
+
+.exper_rules_href{
+	color:white;
+	position: absolute;
+	font-size: $font-size13;
+	right: 15px;
+	bottom: 15px;
+	height: 30px;
+	padding:0 6px;
+	line-height: 30px;
+	border:.5px solid $color_white;
+	border-radius: 15px;
+	z-index: 1;
+}
+
+.vip-swiper-slide2{
+	background-color: $maroon;
+}
+
+.banner.vip_banner{
+	background-image:url(/img/weixin/banner_bg2.jpg);
+}
+
+.banner{
+	height: 192px;
+	overflow: hidden;
+	position: relative;
+	 background-image:url(/img/weixin/banner_bg.jpg);
+	 background-size: cover;
+	 background-position: center bottom;
+	 background-repeat: no-repeat;
+
+	
+
+
+	.vip_level_title{
+		line-height: 30px;
+		text-align: center;
+		color:white;
+		font-size: 15px;
+	}
+	.vip_level_name{
+		line-height: 30px;
+		text-align: center;
+		color:white;
+		font-size: $font-size-title;
+
+		a{
+			color:white;
+			margin-left: 10px;
+		}	
+	}
+
+	.vip_progress_box{
+		margin: 10px auto;
+		position: relative;
+		width: 80%;
+		height: 28px;
+
+		p{
+			font-size: 13px;
+			text-align: center;
+			color:white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			line-height: 32px;
+			z-index: 2;
+			white-space: nowrap;
+		}
+
+		.vip_progress_bar{
+			height: 100%;
+			width: 100%;
+			border-radius: 14px;
+			border:1px solid rgba(255,255,255,.5);
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			overflow: hidden;
+
+			.box {
+				width: 100%;
+				height: 100%;
+				background-color: rgb(252,158,45);
+			}
+		}
+	}
+}
+
+
+.vip_main_title{
+	overflow: hidden;
+	position: relative;
+	padding:15px 15px 15px 60px;
+
+	
+
+	i{
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background-size: cover;
+		/*background-image:url(/img/weixin/v1.png);*/
+		left: 15px;
+		top: 15px;
+	}
+
+	h3{
+		line-height: 30px;
+		height: 30px;
+		font-size: $font-size-sub;
+	}
+
+	em{
+		position: absolute;
+		right: 20px;
+		line-height: 30px;
+		height: 30px;
+		top: 15px;
+		font-size: $font-size-sub;
+		color:$txt-default;
+
+	}
+
+}
+
+/* body */
+.member_info_body{
+	.charge_solution_text{
+		line-height: 25px;
+		font-size: 13px;
+		text-align: center;
+		color:$color_orange;
+	}
+	.marginBottom50{
+		margin-bottom: 50px;
+	}
+	.vip_main_box{
+
+		.vip_cont_box{
+			padding:10px 0;
+
+			h3{
+				padding: 10px 0 0;
+				font-size: 15px;
+				text-align: center;
+			}
+
+			span {
+				display: block;
+				font-size: $font-size-tips;
+				color: #999;
+			}
+		}
+
+		.vip_list_rule_box{
+			padding:15px 0;
+			height: 310px;
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+
+			ul{
+				overflow: hidden;
+			}
+
+			li{
+				width: 33.33%;
+				float: left;
+				height: 140px;
+				box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				padding:0 10px;
+				cursor: pointer;
+
+				>div{
+					width: 70px;
+					height: 70px;
+					background-size: cover;
+					background-position: center;
+					margin:0 auto;
+				}
+
+				.vip_rule_title{
+					font-size: 15px;
+					line-height: 30px;
+					text-align: center;
+					color:rgb(198,198,198);
+				}
+
+				.vip_rule_desc{
+					font-size: $font-size-tips;
+					line-height: 20px;
+					text-align: center;
+					color:rgb(198,198,198);
+				}
+			}
+
+			}
+		}
+
+		.exper_main_box.mt15{
+			margin-top: 15px;
+		}
+
+		.exper_main_box{
+			background-color: white;
+			padding:0 15px;
+			overflow: hidden;
+
+			h3{
+				color:#323232;
+				font-size: $font-size-sub;
+				margin:10px 0 0;
+				line-height: 30px;
+			}
+
+			p{
+				color:rgb(110,110,110);
+				font-size: 13px;
+				line-height: 25px;
+
+
+				a{
+					float: right;
+					text-decoration: underline;
+					color:$color_main;
+					padding:0 3px;
+
+					&:active{
+						background-color:rgb(236,236,236);
+					}
+				}
+			}
+
+			p:last-child{
+				margin-bottom:10px;
+			}
+
+		}
+
+		.vip_timeline_box{
+			margin:20px 15px;
+			background-color: rgba(0,0,0,.4);
+			padding:17px 10px 10px 10px;
+
+
+			.exper_text_box{
+				line-height: 30px;
+				height: 30px;
+				text-align: right;
+				font-size: $font-size-tips;
+
+				i{
+					color:rgb(30,157,248);
+				}
+			}
+
+			.timeline_box{
+				height: 10px;
+				background-color:rgba(255,255,255,.8);
+				border-radius: 5px;
+				position: relative;
+				margin-bottom:10px;
+				margin-top: 15px;
+
+				.timeline_progress{
+					width: 0;
+					background-color: rgb(246,181,37);
+					height: 100%;
+					border-radius: 5px;
+
+					transition:width 3.5s ease;
+					-webkit-transition:width 3.5s ease;
+				}
+
+			}
+
+			
+
+			.t_vip_title{
+				height: 30px;
+				padding-left: 40px;
+				position: relative;
+
+				i{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 30px;
+					height: 30px;
+					background-size: cover;
+				}
+
+				h3{
+					color:$color_white;
+					line-height: 30px;
+					font-size: $font-size-title;
+				}
+			}
+		}
+
+		.vip_rules_list{
+			@include border-t;
+
+			a{	
+				box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				display: block;
+				width: 100%;
+				height:100%;
+				position: relative;
+
+				.rules_jifen_content{
+					position: relative;
+				}
+
+				.rules_quan_content{
+					position: relative;
+					padding:5px 0;
+				}
+			}
+		}
+
+		.rules_title{
+			font-size: $font-size-title;
+			line-height: 60px;
+			height: 60px;
+			padding-left: 15px;
+			color:black;
+
+			i{
+				margin-left: 10px;
+			}
+		}
+		
+		.rules_title.gray{
+			color:$gray-txt;
+		}
+
+		.icon-suoding{
+			font-size: 20px;
+			position: absolute;
+			right: 20px;
+			color:$gray-txt;
+			height: 30px;
+			line-height: 30px;
+			top: 15px;
+		}
+
+		.rules_desc{
+			font-size: $font-size-sub;
+			position: absolute;
+			right: 20px;
+			color:$color_main;
+			height: 30px;
+			line-height: 30px;
+			top: 15px;
+		}
+
+		.vip_main_container{
+			
+			ul{
+				position: relative;
+			}
+		}
+
+
+
+		footer{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background-color: white;
+			@include border-t;
+
+			> div{
+				line-height: 50px;
+				margin-left: 20px;
+
+				span{
+					font-size: 15px;
+				}
+
+			em{
+				color:$color_main;
+				font-size: 15px;
+				margin-left: 10px;
+			}
+		}
+
+		.buy_btn{
+			line-height: 50px;
+			text-align: center;
+			color:white;
+			font-size: 15px;
+			background-color: $color_main;
+			position: absolute;
+			width: 140px;
+			right: 0;
+			top: 0;
+
+			&:active{
+				background-color: $color_main_active;
+			}
+		}
+	}
+
+
+	.vip_list_rule_box li.on{
+		.vip_rule_title,.vip_rule_desc{
+			color:#323232;
+		}
+	}
+
+	.marginTop40{
+		margin-top: 40px !important;
+	}
+	.none_level_desc{
+		color:white;
+		text-align: center;
+		font-size: 13px;
+		line-height: 35px;
+		margin-top: 20px;
+	}
+
+	
+
+	.cover_box{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height:100%;
+		background-color: rgba(0,0,0,.6);
+		z-index: 3;
+	}
+
+	.overlay_vip_coupon_box{
+		position: fixed;
+		width: 80%;
+		height: 75%;
+		margin:0 auto;
+		background-color: $body-bg;
+
+		top: 5%;
+		left: 10%;
+		z-index: 4;
+		padding-top: 50px;
+	}
+
+	.vip_coupn_header{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		height: 50px;
+		background-color: $color_white;
+		line-height: 50px;
+		text-align: center;
+		
+		a{
+			position: absolute;
+			color:$gray-txt;
+			width: 30px;
+			height: 30px;
+			top: 10px;
+			right: 10px;
+			text-align: center;
+			line-height: 30px;
+			font-size: 20px;
+		}
+	}
+
+	.vip_coupn_container{
+		height: 100%;
+		overflow: scroll;
+		-webkit-overflow-scrolling:touch;
+	}
+}
+
+.exper_txt{
+	float: right;
+
+	.cur{
+		color:#f6b525;
+	}
+}
+.blue_num{
+	padding:0 3px;
+}
+
+.vip_body .vip_flex_wrapper a{
+	&:hover i{
+		color:#3eb9ff !important;
+	}
+}
+
+/* new ^ 2017-10-09 */
+.jifen_entrance_box{
+	background-color: $color_white;
+	height: 60px;
+	position: relative;
+	
+	
+	a{
+		display: block;
+		height: 100%;
+		padding-left: 60px;
+	}
+
+	h3{
+		color:black;
+		font-size: 15px;
+		line-height: 60px;
+	}
+
+	.icon-xiangyoujiantou{
+		position: absolute;
+		right: 20px;
+		top: 15px;
+		height: 30px;
+		line-height: 30px;
+		text-align: right;
+		color:$gray-txt;
+	}
+}
+.jifen_icon_box{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	left: 15px;
+	border-radius: 50%;
+	background-image:url(/img/weixin/xing.png);
+	background-size: cover;
+}
+.more_level_box{
+
+	h3{	
+		position: relative;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		font-size: $font-size13;
+		padding-left: 30px;
+		color:$gray-txt;
+
+		i{
+			width: 22px;
+			height: 22px;
+			position: absolute;
+			text-align: center;
+			line-height: 22px;
+			left: 50%;
+			border-radius: 50%;
+			margin-left: -105px;
+			top: 18px;
+			background-color: $gray-txt;
+			color:snow;
+			font-size: $font-size-tips;
+			opacity: .3;
+		}
+	}
+}
+.vip_rule_ul{
+	background-color: $color_white;
+	margin-top: 15px;
+}
+
+
+.vip_flex_wrapper{
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+
+	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	transform: translateY(-56px);
+	-webkit-transform: translateY(-56px);
+	justify-content: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	position: absolute;
+	left: 15px;
+	right: 15px;
+} 
+
+.timeline_desc_text{
+	line-height: 25px;
+	height: 25px;
+	font-size: $font-size-tips;
+	color:$color_white;
+}
+.exper_line_box{
+	margin-bottom: 15px;
+	background-color: $white;
+	padding:15px;
+
+	.timeline_box{
+		background-color: $gray-bg;
+		height: 4px;
+		border-radius: 4px;
+		margin:10px 0;
+	}
+}
+
+.exper_level_name_ul,.exper_level_count_ul{
+	list-style: none;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+
+	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	justify-content: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+
+	li{
+		font-size: $font-size-tips;
+		text-align: center;
+		line-height: 30px;
+	}
+}
+/* .exper_level_name_ul li{
+	line-height: 20px;
+}
+.exper_level_count_ul li{
+	line-height: 30px;	
+} */
+
+
+
+/* 未达到的会员等级样式 */
+.vip_rule_ul.gray{
+	
+	.vip_lv1{
+		background-image:url(/img/weixin/v1_g.png);
+	}
+	.vip_lv2{
+		background-image:url(/img/weixin/v2_g.png);
+	}
+	.vip_lv3{
+		background-image:url(/img/weixin/v3_g.png);
+	}
+	.vip_lv4{
+		background-image:url(/img/weixin/v4_g.png);
+	}
+	.vip_lv5{
+		background-image:url(/img/weixin/v5_g.png);
+	}
+	.vip_lv6{
+		background-image:url(/img/weixin/v6_g.png);
+	}
+}
+
+.vip_lv1{
+	background-image:url(/img/weixin/v1.png);
+}
+.vip_lv2{
+	background-image:url(/img/weixin/v2.png);
+}
+.vip_lv3{
+	background-image:url(/img/weixin/v3.png);
+}
+.vip_lv4{
+	background-image:url(/img/weixin/v4.png);
+}
+.vip_lv5{
+	background-image:url(/img/weixin/v5.png);
+}
+.vip_lv6{
+	background-image:url(/img/weixin/v6.png);
+}
+
+
+.icon-V1,.icon-V2,.icon-V3,.icon-V4,.icon-V5,.icon-V6{
+	width: 25px;
+	height: 25px;
+	display: block;
+	background-size: cover;
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.icon-V1.on,.icon-V2.on,.icon-V3.on,.icon-V4.on,.icon-V5.on,.icon-V6.on{
+	-webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.icon-V1{
+	background-image:url(/img/weixin/v1_go.png);
+}
+.icon-V2{
+	background-image:url(/img/weixin/v2_go.png);
+}
+.icon-V3{
+	background-image:url(/img/weixin/v3_go.png);
+}
+.icon-V4{
+	background-image:url(/img/weixin/v4_go.png);
+}
+.icon-V5{
+	background-image:url(/img/weixin/v5_go.png);
+}
+.icon-V6{
+	background-image:url(/img/weixin/v6_go.png);
+}

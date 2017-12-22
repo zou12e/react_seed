@@ -1,0 +1,39 @@
+
+@mixin nowrap{
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin border-radius($border-color: $bordercolor,$border-radius: $border-radius-base,$border-size: .5px,$border-style:solid){
+    border: $border-size $border-style $border-color;
+    border-radius: $border-radius;
+}
+
+@mixin borderBox{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+@mixin border-l($border-color: $bordercolor,$border-size: .5px,$border-style:solid){
+    border-left: $border-size $border-style $border-color;
+}
+@mixin border-r($border-color: $bordercolor,$border-size: .5px,$border-style:solid){
+    border-right: $border-size $border-style $border-color;
+}
+@mixin border-t($border-color: $bordercolor,$border-size: .5px,$border-style:solid){
+    border-top: $border-size $border-style $border-color;
+}
+@mixin border-b($border-color: $bordercolor,$border-size: .5px,$border-style:solid){
+    border-bottom: $border-size $border-style $border-color;
+}
+
+@mixin after{
+    content:"";
+    position: absolute;
+}
+
+@mixin translate($x: -50%,$y: -50%){
+    transform:translate($x, $y);
+    -webkit-transform:translate($x, $y);
+}

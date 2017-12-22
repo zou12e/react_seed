@@ -1,0 +1,312 @@
+﻿.color_main_bg{
+	background-color: $color_main;
+}
+
+.member_card {
+	overflow: hidden;
+
+	.member_card_box {
+		position: relative;
+		height: 197px;
+		margin: 17px 22px;
+		padding: 4px;
+		color: $color_white;
+		border-radius: 15px;
+		box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		padding:15px 20px;
+		overflow: hidden;
+		background-size:cover;
+
+		.icon-crown{
+			color:black;
+		}
+		
+		.star_icon {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			width: 170px;
+			z-index: 0;
+		}
+
+		.shop_img{
+			height: 40px;
+		}
+
+		.shop_img_emotion{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			width: 80px;
+		}
+
+		.p {
+			text-align: center;
+			font-weight: bold;
+			margin: 20px 0 20px;
+		}
+		.t {
+			position: relative;
+			padding:5px 0;
+
+			.vip_icon{
+				position: absolute;
+				left: 0;
+				top: 10px;
+				margin:0;
+
+				i{
+					color:#fada46;
+				}
+			}
+			
+
+			.user_head_img{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-right: 10px;
+				margin-top: 5px;
+
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+
+			p {
+				font-size: $font-size-title-lg;
+				line-height: 30px;
+				color:$white;
+			}
+			.p2 {
+				font-size: $font-size-h1;
+				color:$white;
+			}
+			
+		}
+		.b {
+			position: absolute;
+			bottom: 12px;
+			@include nowrap;
+
+			a {
+				color: $white;
+				font-size: $font-size-sub;
+				display: block;
+				line-height: 25px;
+				height: 25px;
+
+				&:active {
+					color:$txt-link;
+				}
+			}
+		}
+		.merber_top {
+			position: absolute;
+			top:-30px;
+			left: 50%;
+			margin-left: -35px;
+			width: 50px;
+			padding: 0 10px;
+			background-color: $color_main;
+		}
+
+		.qrcode{
+			position: absolute;
+			bottom: 25px;
+			right: 30px;
+			width: 45px;
+			height: 45px;
+			font-size: 40px;
+			z-index: 10;
+			i{	
+				width: 100%;
+				height: 100%;
+				display: block;
+				line-height: 45px;
+				font-size: 50px;
+				color: $white;
+			}
+		}
+	}
+}
+.deposit_box {
+	margin: $box_gap 0;
+	@include border-t;
+	@include border-b;
+	background-color: $color_white;
+	line-height: 60px;
+	text-align: center;
+	.fl,.fr {
+		width: 50%;
+		position: relative;
+		.icon {
+			width: 36px;
+			height: 36px;
+			margin-bottom: -12px;
+			margin-right: 5px;
+		}
+		&:active {
+			background-color: $active-bg;
+		}	
+	}
+	.fl:before {
+		@include after;
+		right: 0;
+		top: 10px;
+		height: 40px;
+		@include border-r;
+	}
+}
+.deposit_text{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+}
+
+
+
+.card_body{
+	background-color: $white;
+}
+.vip_discount_txt{
+	color:$white;
+	font-weight: normal;
+}
+.discount_txt{
+	color:$color_main;
+	font-weight: normal;
+}
+.logo_wrapper_box{
+	margin:90px auto 45px;
+	width: 71px;
+	height: 71px;
+	border-radius: 50%;
+	background-color: rgb(232,230,236);
+	padding:10px;
+
+	img{
+		width: 100%;
+	}
+
+	.icon{
+		width: 71px;
+		height: 71px;
+		font-size: 55px;
+		text-align: center;
+		line-height: 71px;
+		color: #3e83ff;
+	}
+}
+
+.slider_pagination{
+	width: 46px !important;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    margin-top: -10px;
+
+	.swiper-pagination-bullet{
+		width: 13px;
+		line-height: 0;
+		height: 4px;
+		border-radius: 4px;
+		background-color: $gray-bg;
+		opacity: 1;
+	}
+
+	.swiper-pagination-bullet-active{
+		background-color: $color_main;
+	}
+}
+
+.card_txt{
+	line-height: 20px;
+	text-align: center;
+	padding:0 20px;
+	font-size: $font-size13;
+	color:$gray-txt;
+}
+
+/* 蛋壳样式  */
+.danke_card_box.member_card_box{
+	background-image:linear-gradient(left, #ffd600, #ffb200);
+	background-image:-webkit-linear-gradient(left, #ffd600, #ffb200);
+	background-image:-moz-linear-gradient(left, #ffd600, #ffb200); 
+
+	
+	.vip_icon{
+		border: none;
+		i{
+			color:black !important;
+		}
+	}
+
+	.qrcode{
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		width: 45px;
+		height: 45px;
+		font-size: 40px;
+		z-index: 10;
+		i{	
+			color: black;
+		}
+	}
+
+	.t{
+		p {
+			color:black;
+			font-size: $font-size-info;
+		}
+		.p2 {
+			color:black;
+			font-size: $font-size-sub;
+		}
+	}
+
+	.b {
+
+		a {
+			color: $txt-default;
+			font-size: $font-size-tips;
+		}
+	}
+	.user_info_box {
+		margin-top: 5px;
+		margin-left: 80px;
+	}
+
+	a:active{
+		background-color: transparent;
+	}
+}
+
+.arrow_right{
+	position: absolute;
+	right: 20px;
+	color:$gray-txt;
+}
+.member_card_box.white{
+	background-color: $color_white;
+}
+.amount_txt{
+	float: right;
+	margin-right: 45px;
+	color:$color_main;
+}
+
+
+@media only screen and (max-width:320px){
+	.member_card .member_card_box{
+		height: 170px;
+	}
+}
+@media only screen and (min-width:376px){
+	.member_card .member_card_box{
+		height: 220px;
+	}
+}
